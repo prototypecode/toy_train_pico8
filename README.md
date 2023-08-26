@@ -1,5 +1,7 @@
 # Toy Train Pico-8
 
+![](https://prototypecode.itch.io/toy-train-pico-8)
+
 ```lua
 function _init()
   cls()
