@@ -22,29 +22,37 @@ end
 
 function move_segments(s, dir)
    spd = dir * 2
-   if (s[2] == 8) then
-      if(s[1] == 112) then
+   if (s[2] == 8)
+   then
+      if(s[1] == 112)
+      then
          s[2] += spd
       else
          s[1] += spd
       end
    else
-      if (s[1] == 112) then
-         if (s[2] == 112)	then
+      if (s[1] == 112)
+      then
+         if (s[2] == 112)
+         then
             s[1] -= spd
          else
             s[2] += spd
          end
       else
-         if (s[2] == 112) then
-            if (s[1] == 8)	then
+         if (s[2] == 112)
+         then
+            if (s[1] == 8)
+            then
                s[2] -= spd
             else
                s[1] -= spd
             end
          else
-            if (s[1] == 8) then
-               if (s[2] == 8) then
+            if (s[1] == 8)
+            then
+               if (s[2] == 8)
+               then
                   s[1] += spd
                else
                   s[2] -= spd
